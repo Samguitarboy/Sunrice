@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/brainbackground"
+    android:id="@+id/test_page">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/question"
+        android:src="@drawable/brace"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp" />
+
+    <ImageView
+        android:id="@+id/a"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="47dp"
+        android:layout_below="@+id/question"
+        android:layout_alignStart="@+id/question"
+        android:layout_marginTop="60dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/b"
+        android:layout_below="@+id/a"
+        android:layout_alignStart="@+id/a"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/a"
+        android:layout_toEndOf="@+id/a"
+        android:layout_marginStart="26dp"
+        android:id="@+id/a1"
+        android:layout_above="@+id/b"
+        android:text="Q彈有水份"
+        android:layout_gravity="center"
+        android:layout_width="100dp" />
+
+    <TextView
+        android:text="喜歡吃Q彈有水分還是粒粒分明的米飯呢?"
+        android:layout_height="wrap_content"
+        android:id="@+id/qq"
+        android:layout_above="@+id/a"
+        android:layout_alignStart="@+id/a"
+        android:layout_marginBottom="60dp"
+        android:layout_width="250dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/a2"
+        android:text="粒粒分明"
+        android:layout_alignTop="@+id/b"
+        android:layout_alignBottom="@+id/b"
+        android:layout_alignStart="@+id/a1"
+        android:layout_gravity="center_horizontal"
+        />
+</RelativeLayout>

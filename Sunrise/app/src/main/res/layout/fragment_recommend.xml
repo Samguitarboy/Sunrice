@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/recommend_background">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/photo"
+        android:layout_marginTop="40dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fit"
+        android:layout_below="@+id/photo"
+        android:layout_alignEnd="@+id/photo"
+        android:layout_marginTop="27dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_height="100dp"
+        android:id="@+id/describe"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/fit"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/more"
+        android:layout_below="@+id/moreicon"
+        android:layout_centerHorizontal="true"
+        android:layout_width="120dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/moreicon"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/describe"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
